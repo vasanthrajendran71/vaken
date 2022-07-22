@@ -1,0 +1,52 @@
+body{
+    font-family: 'Courier New', Courier, monospace;   
+    background-image: url('https://www.denofgeek.com/wp-content/uploads/2019/04/avengers-endgame-marvel-mcu-easter-eggs-references.jpg?fit=1200%2C675');
+    background-image: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+}
+#vasanth{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+}
+.container{
+    display:inline-grid;
+    justify-content:center;
+    align-items:center;
+    grid-template-rows: auto auto ;
+    grid-template-columns: auto auto;
+    grid-column-gap: 50px;
+    border:1px solid white(0, 0, 0, 0.8);
+    background-color:rgba(117, 190, 218, 0.5);
+    color:white;    
+}
+#item2{
+    grid-column-start: 1;
+    grid-column-end:3;
+    background-color: red;
+    text-align: center;
+    color: white;
+}
+#item1{
+    display:grid;
+    grid-template: auto auto auto auto/ auto auto auto;
+    grid-gap: 10px;
+    padding:20px;
+    
+}
+#item{
+    grid-column-start:1;
+    grid-column-end: 4;   
+}
+#items{
+    width:100px;
+    height:100px;
+    padding-bottom: 20px;
+    font-size:10px;
+    text-align:center;
+    background-color:white;
+    border:1px solid white(0, 0, 0, 0.8) ;
+    color:black;
+}
