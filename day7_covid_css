@@ -1,0 +1,31 @@
+.container{
+    display: grid;
+    grid-template-rows: auto auto auto auto auto 350px;
+    grid-template-columns: auto auto;
+    grid-row-gap:40px;
+    grid-column-gap:5px;
+    background-color:powderblue;
+
+}
+#item{
+    grid-column-start:1;
+    grid-column-end:3;
+    text-align: center;
+    background-color:violet;
+    color: white;
+}
+#item2{grid-area:3/2/4/3;}
+#item4{grid-area:5/2/6/3;}
+#para{
+    display:flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+#item1,#item3,#item5{
+    border:1px solid #dfdfdf;
+}
+/* To show how the flex items are arranged. only for understanding
+#flex{
+    background-color: powderblue;
+    border:1px solid #dfdfdf;
+}*/
