@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Marvel Universe</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="vasanth">
+      <div class="container">
+        <div id="item2"><h1 id="TitleName">THE MARVEL UNIVERSE</h1></div>
+        <div id="item1">
+            <div id="item" ><h2 id="popularHeros">POPULAR SUPER HEROS</h2></div>
+            <div id="items"> 
+                <img id="superHeros1" src="https://www.denofgeek.com/wp-content/uploads/2019/04/avengers-endgame-marvel-mcu-easter-eggs-references.jpg?fit=1200%2C675" width="100px" height="100px" >IRON MAN
+                <p id="superHerosName1"></p>
+            </div>
+            <div id="items">
+                <img id="superHeros2" src="https://www.denofgeek.com/wp-content/uploads/2019/04/avengers-endgame-marvel-mcu-easter-eggs-references.jpg?fit=1200%2C675" width="100px" height="100px">THOR
+                <p id="superHerosName2" ></p>
+            </div>
+            <div id="items"><img src="https://www.denofgeek.com/wp-content/uploads/2019/04/avengers-endgame-marvel-mcu-easter-eggs-references.jpg?fit=1200%2C675" width="100px" height="100px"> CAPTIAN AMERICA</div>
+            <div id="items"><img src="https://www.denofgeek.com/wp-content/uploads/2019/04/avengers-endgame-marvel-mcu-easter-eggs-references.jpg?fit=1200%2C675" width="100px" height="100px" > HULK</div>
+            <div id="items"><img src="https://www.denofgeek.com/wp-content/uploads/2019/04/avengers-endgame-marvel-mcu-easter-eggs-references.jpg?fit=1200%2C675" width="100px" height="100px"> BLACK PANTHER</div>
+            <div id="items"><img src="https://www.denofgeek.com/wp-content/uploads/2019/04/avengers-endgame-marvel-mcu-easter-eggs-references.jpg?fit=1200%2C675" width="100px" height="100px"> SPIDER MAN</div>
+            <div id="items"><img src="https://www.denofgeek.com/wp-content/uploads/2019/04/avengers-endgame-marvel-mcu-easter-eggs-references.jpg?fit=1200%2C675" width="100px" height="100px"> BLACK WIDOW</div>
+            <div id="items"><img src="https://www.denofgeek.com/wp-content/uploads/2019/04/avengers-endgame-marvel-mcu-easter-eggs-references.jpg?fit=1200%2C675" width="100px" height="100px"> ANT MAN</div>
+        </div>
+        <div id="item1">
+        <div id="item"><h2 id="popularVillains">POPULAR SUPER VILLAINS</h2></div>
+        <div id="items"> 
+            <img id="superVillain1" src="https://www.denofgeek.com/wp-content/uploads/2019/04/avengers-endgame-marvel-mcu-easter-eggs-references.jpg?fit=1200%2C675" width="100px" height="100px" >LOKI
+            <p id="superVillainName1"></p>
+        </div>
+        <div id="items">
+            <img id="superVillain2" src="https://www.denofgeek.com/wp-content/uploads/2019/04/avengers-endgame-marvel-mcu-easter-eggs-references.jpg?fit=1200%2C675" width="100px" height="100px">RED SKULL
+            <p id="superVillainName2" ></p>
+        </div>
+        <div id="items"><img src="https://www.denofgeek.com/wp-content/uploads/2019/04/avengers-endgame-marvel-mcu-easter-eggs-references.jpg?fit=1200%2C675" width="100px" height="100px"> THANOS</div>
+        <div id="items"><img src="https://www.denofgeek.com/wp-content/uploads/2019/04/avengers-endgame-marvel-mcu-easter-eggs-references.jpg?fit=1200%2C675" width="100px" height="100px" > ULTRON</div>
+        <div id="items"><img src="https://www.denofgeek.com/wp-content/uploads/2019/04/avengers-endgame-marvel-mcu-easter-eggs-references.jpg?fit=1200%2C675" width="100px" height="100px"> GREEN GOBLIN</div>
+        <div id="items"><img src="https://www.denofgeek.com/wp-content/uploads/2019/04/avengers-endgame-marvel-mcu-easter-eggs-references.jpg?fit=1200%2C675" width="100px" height="100px">MYSTERIO </div>
+        <div id="items"><img src="https://www.denofgeek.com/wp-content/uploads/2019/04/avengers-endgame-marvel-mcu-easter-eggs-references.jpg?fit=1200%2C675" width="100px" height="100px">DOCTOR OCTOPUS </div>
+        
+        </div>
+
+      </div>
+    </div>
+</body>
+</html>
