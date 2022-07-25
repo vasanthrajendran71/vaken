@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Round Around Earth</title>
+    <link rel="stylesheet" href="./style.css">
+    <style id="backgroundImage" >
+        body{
+        background-image:url("https://lh3.googleusercontent.com/5npJw6isTeYW2wZo1H_97BIc6A4hxVWYgiM-2M8s6HafQ8oTmpg1ycbzu4_qRd17qa7M4sP0gNwUs0TUa-L-3mU_7A=w640-h400-e365-rj-sc0x00ffffff");
+        }
+    </style>
+</head>
+<body>
+    <div class="image" ><img id="3dImage" src="https://images.news18.com/ibnlive/uploads/2021/07/1627207399_space.jpg" width="400px" height="400px"></div>
+    <div class="container">
+        <h1 id="heading">Rocket around the Earth</h1>
+        <form>
+            <label id="departure">Departure Country</label><br>
+            <select id="dropDown" value="India" class="box">
+                <option value="India"> India</option>
+                <option value="USA">USA</option>
+                <option value="England">England</option>
+                <option value="Sri Lanka">Sri Lanka</option>
+                <option value="Russia">Russia</option>
+            </select><br><br>
+            <label>No. of. Space Travellers</label><br>
+            <input id="noOfTravellers" type="text" class="box"><br><br>
+            <label>Your email</label><br>
+            <input id="email" type="text" value="ilovespace@gmail.com" class="box"><br><br>
+            <label> Do you wanna rent a space suit?</label><br>
+            <input id="yesOrNo" type="radio" value="Yes,Please">Yes, Please
+            <input type="radio" value="No, I have my own">No, I have my own<br><br><br>
+            <div class="submitbutton"><input  id="submit" type="submit" value="TAKE US TO SPACE"></div><br>
+        </form>
+    </div>
+</body>
+</html>
