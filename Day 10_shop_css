@@ -1,0 +1,45 @@
+body{
+    display:flex;
+    flex-direction: column;
+}
+#dashboard{
+    display: flex;
+    justify-content: space-between;
+    background-color:indianred;
+}
+#icon{
+    padding-left: 40px;
+    padding-top:5px;
+}
+#cartItems{
+    padding-right:40px;
+}
+#image{
+    text-align: center;
+}
+.amount{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#lightcolor{
+    color:gray;
+}
+footer{
+    background-color:indianred;
+    display: flex;
+    justify-content: space-between;
+}
+.leftside{
+    padding-left: 40px;
+}
+.rightside{
+    padding-right: 40px;
+    text-align: right;
+}
