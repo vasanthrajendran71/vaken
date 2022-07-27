@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Animi-Forms</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="header">
+        <div><img id="image" src="https://i.pinimg.com/originals/54/6d/54/546d5413f627c9166b16c20b3777eae6.jpg" width="100px" height="100px"></div>
+        <div><h3 id="heading">ANIMI-FORMS</h3></div><h1></h1>
+        <div><img  src="https://i.pinimg.com/originals/54/6d/54/546d5413f627c9166b16c20b3777eae6.jpg" width="100px" height="100px"></div>
+    </div>
+    
+        <form>
+            <div class="container">
+                <div class="container2">
+                    <div><label>ANIMI-Name</label><br>
+                    <input type="text" class="textbox" id="nameTextBox"></div><br>
+                    <div><label>ANIMI-(ORIGIN-COUNTRY)</label><br>
+                    <input id="countryTextBox" type="text" class="textbox"></div><br>
+                    <div><label>No.of.Episodes</label><br>
+                    <input id="noOfEpisodeTextBox" type="text" class="textbox"></div><br>
+                    <div><label>YOUR RATING</label><br>
+                    <input id="yourRatingTextBox" type="text" class="textbox"></div><br>
+                    <div><label>AWARDS</label><br>
+                    <input id="awardsTextBox" type="text" class="textbox"></div><br>
+                    <button></button>
+                </div>
+                <div class="container1">
+                <div><label>DESCRIPTION ABOUT THE ANIMI</label><br>
+                <input id="descriptionTextBox" type="text" class="textbox1"></div><br><br>
+                <div><input id="submitButton" type="submit" value="SUBMIT"></div>
+                </div>
+            </div>
+        </form>
+
+    
+
+</body>
+</html>
