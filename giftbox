@@ -1,0 +1,77 @@
+<head>
+    <title>WHIP-UP GIFT BOXES</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+
+</head>
+<body>
+    <h1 ID="heading">WHIP-UP GIFT BOXES</h1>
+    <div id="container">
+        <input  id="textBox" type="text" placeholder="Enter the no of gifts to generate">
+        <button id="generatebutton" onclick="generate()" >Generate Boxes</button>
+    </div>
+    <div id="grid"> </div>
+</body>
+
+
+
+body{
+    text-align:center;
+    background-image: linear-gradient(to bottom right, rgb(201, 201, 223),rgb(160, 108, 117));
+}
+#textBox{
+    background-color: pink;
+    height:40px;
+    width:400px;
+    text-align:center;
+    border-radius: 5px;
+    box-shadow: 8dp;
+    border-color:pink; 
+}
+#container{
+    display:flex;
+    justify-content: center;
+}
+#generatebutton{
+    height:40px;
+    width:200px;
+    margin-left: 20px;
+    border-radius:5px;
+    background-color: greenyellow;
+    border-color: greenyellow;
+}
+#grid{
+    display:grid;
+    grid-template-columns: 100px 100px 100px  100px 100px 100px 100px 100px 100px 100px 100px 100px;
+    grid-template-rows:min-content;
+    min-width:1250px;
+    min-height:500px;
+    margin:50px 70px 50px 70px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 20px 10px 20px;
+    grid-row-gap:10px;
+    grid-column-gap:10px;
+
+}
+
+#heading{
+    margin-top:100px;
+    color:rgb(241, 208, 18);
+}
+
+
+
+function generate(){
+    const a=document.getElementById("textBox").value;
+    const b=document.getElementById("grid");
+    b.innerHTML="";
+    for(let i=0;i<a;i++){
+        let c=document.createElement('img');
+        b.appendChild(c);
+        c.src="https://cdn.pixabay.com/photo/2014/11/27/22/44/gift-548293_960_720.jpg";
+        c.style.width="80%";
+        c.style.height="80px";
+        c.style.margin="10px";
+    }
+}
