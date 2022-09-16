@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chronometer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <h1 id="title">Chronometer</h1>
+    <div id="chronometer-holder">
+        <h2 id="timer">Chronometer 0</h2>
+        <div id="timer1">
+            <p id="minutes-holder">25</p>
+            <p>:</p>
+            <p id="seconds-holder">00</p>
+        </div>
+    </div> 
+    <div id="buttons">
+        <button id="start" onclick="start()" >Start</button>
+        <button id="stop" onclick="stop1()" >Stop</button>
+        <!-- //if we give the function name same as keyword it wont run. So i change it to stop1. -->
+        <button id="reset" onclick="reset()" >Reset</button>
+    </div>
+
+</body>
+</html>
+
+
+
+body{
+    background-image: url("https://cdn.pixabay.com/photo/2018/02/24/20/39/clock-3179167__340.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+}
+#chronometer-holder{
+    border-radius: 50%;
+    width:250px;
+    height:250px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    /* margin-top:100px; */
+}
+#timer1{
+    display:flex;  
+}
+button{
+    background-color:black;
+    color:white;
+}
+#buttons{
+    margin-top:100px;
+}
+
+
+
+let c;
+function start(){
+   c=setInterval(start1,1000);
+   document.getElementById("start").disabled = true;
+}
+function start1(){
+    let seconds=document.getElementById("seconds-holder").innerHTML;
+    // let b=document.getElementById("seconds-holder");
+    let minutes=document.getElementById("minutes-holder").innerHTML;
+    if(seconds!=0){
+        let s=seconds-1
+        if(s<10){
+            document.getElementById("seconds-holder").innerHTML= "0" + s;
+        }
+        else{
+            document.getElementById("seconds-holder").innerHTML=s;
+        }    
+    }
+    else{
+        document.getElementById("seconds-holder").innerHTML=59;
+        document.getElementById("minutes-holder").innerHTML=minutes-1;   
+    }
+}
+function reset(){
+    clearInterval(c);
+    document.getElementById("start").disabled = false;
+    document.getElementById("seconds-holder").innerHTML="00";
+    document.getElementById("minutes-holder").innerHTML=25;   
+}
+function stop1(){
+    clearInterval(c);
+    document.getElementById("start").disabled = false;
+}
