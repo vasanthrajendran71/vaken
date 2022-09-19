@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <!-- <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+        <title>Numberates game</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div id="attempt">
+            <label id="attemptLabel">NO OF ATTEMPTS</label>
+            <div id="number">
+                <p id="attemptCount">10</p>
+            </div>
+        </div>
+        <div id="title1">
+            <h1 id="title">NUMBERATES</h1>
+            <hr width="500px">
+        </div>
+        <div id="box">
+            <header><h3 id="heading">Guess the number between 1-100</h3></header><img>
+            <div id="triangle-down" width="300px" height="300px"></div>
+            <div><label id="textLabel">Enter the number:</label>
+            <input type="text" id="textBox"></div>
+            <button id="checkButton" onclick="check1()">Check</button>
+        </div>
+        <p id="demo"></p>
+    </body>
+</html>
+
+
+
+
+body{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-image: linear-gradient(to bottom right, #f162da,rgb(214, 231, 58));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align:center;
+}
+#attempt{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    width:fit-content;
+    margin-left:auto;
+}
+#number{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    background-color:antiquewhite;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+#title1{
+    text-align:center;
+}
+#box{
+    margin-top:20px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    width:800px;
+    background-color:white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius:10px;
+}
+#triangle-down {
+    width: 0;
+    height:0 ;
+    border-left: 348px solid transparent;
+    border-right: 350px solid transparent;
+    border-top: 42px solid rgb(221, 210, 210);
+    
+}
+#textBox, #checkButton{
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+
+
+
+
+function check1(){
+    const a=30;
+    var b=document.getElementById("textBox").value;
+    var count=document.getElementById("attemptCount").innerHTML;
+    document.getElementById("attemptLabel").innerHTML="REMAINING ATTEMPTS";
+    document.getElementById("title").innerHTML="NUMBERATES";
+    if(count>=2){
+        document.getElementById("attemptCount").innerHTML=count-1;
+        if(b==a){
+            window.location.href="congrats.html";
+        }
+        else if(b<a){
+            document.getElementById("demo").innerHTML="GUESSED NUMBER IS <br> SMALL";
+        }
+        else{
+            document.getElementById("title").innerHTML="NUMBER GUESSING GAME";
+            document.getElementById("demo").innerHTML="GUESSED NUMBER IS <br> BIG";
+        }
+    }
+    else{
+        window.location.href="sorry.html";
+
+    }
+}
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Congrats</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="title1">
+            <h1>NUMBERATES</h1>
+            <hr width="500px">
+        </div>
+        <div id="box">
+            <p font-size="50px">🥳</p>
+            <div id="triangle-down" width="300px" height="300px"></div>
+            <h2>CONGRATS YOU HAVE WON THE <BR>GAME</h2>
+        </div>
+
+    </body>
+
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sorry</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="title1">
+            <h1>NUMBER GUESSING GAME</h1>
+            <hr width="500px">
+        </div>
+        <div id="box">
+            <p font-size="50px">😕</p>
+            <div id="triangle-down" width="300px" height="300px"></div>
+            <h2>SORRY BETTER LUCK NEXT TIME</h2>
+        </div>
+    </body>
+</html>
