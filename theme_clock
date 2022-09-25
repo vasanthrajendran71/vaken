@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia Viewer</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <button id="toggleButton" onclick="darkmode()">Dark mode</button>
+    <button id="toggleButton1" onclick="lightmode()">Light mode</button>
+    <div id="clock-container">
+        <div id="clock">
+            <div id="center-point"></div>
+            <div id="second"></div>
+            <div id="minute"></div>
+            <div id="hour"></div>
+        </div>
+        <div id="time">
+            <h2 id="ho"></h2>
+            <h2 id="colon">:</h2>
+            <h2 id="mi"></h2>
+            <h2 id="ap"></h2>
+        </div><br>
+        <div id="date">
+            <h4 id="day"></h4>
+            <h4 id="month"></h4>
+            <h4 id="da"></h4>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+body{
+    text-align:center;
+}
+#toggleButton1{
+   display:none;
+}
+#clock{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    border:2px solid red;
+    margin-left:45%;
+    margin-top:100px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#center-point{
+    height:2.5px;
+    width:2.5px;
+    border:2px solid red;
+    background-color: red;
+    border-radius:50%;  
+}
+#hour,
+#minute,
+#second {
+    position: absolute;
+    background: red;
+    transform-origin: bottom;
+}
+#second{
+    width: 2px;
+    position: absolute;
+    background-color: red;
+    height: 100px;
+    top: 130px;
+    opacity:0.8;
+}
+#minute{
+    width:3px;
+    position:absolute;
+    background-color: red;
+    height:80px;
+    top:151px;
+    opacity:0.6;
+}
+#hour{
+    width:3px;
+    position:absolute;
+    background-color: red;
+    height:60px;
+    top:172px;
+    opacity:1;
+}
+#time,#date{
+    display:inline-flex;
+    flex-direction:row;
+    font-size: large;
+
+}
+#ap{
+    padding-left:5px;
+}
+#month,#da{
+    padding-left:5px;
+}
+#date{
+    opacity:0.5;
+}
+
+
+
+
+function darkmode(){
+    document.getElementById("toggleButton").style.display="none";
+    document.getElementById("toggleButton1").style.display="inline";
+    document.body.style.cssText='background:rgb(58, 48, 48);color:white';    
+}
+function lightmode(){
+    document.getElementById("toggleButton").style.display="inline";
+    document.getElementById("toggleButton1").style.display="none";
+    document.body.style.cssText='background:white;color:rgb(58, 48, 48)';   
+}
+setInterval(a,1000);
+function a(){
+setInterval(time1,1000);
+}
+function time1(){
+    const date=new Date();
+    var h=date.getHours(); 
+    var m=date.getMinutes();
+    var s=date.getSeconds();
+    var day=date.getDay();
+    var month=date.getUTCMonth()+1 ;
+    var da=date.getDate();
+    s_rotation=6*s;//for clock rotation
+    m_rotation=6*m;
+    h_rotation=30*h+m/2;
+    second.style.transform= `rotate(${s_rotation}deg)`;
+    minute.style.transform= `rotate(${m_rotation}deg)`;
+    hour.style.transform= `rotate(${h_rotation}deg)`;
+    const list=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];//for date 
+    for(var i=0;i<=6;i++){
+        if(i==day){
+            document.getElementById("day").innerHTML=list[i]+",";
+        }
+    }
+    const list1=["January","February","March","April","May","June","July","August","September","October","November","December"];
+    for(i=0;i<=11;i++){
+        if(i==month){
+            document.getElementById("month").innerHTML=list1[i];
+        }
+    }
+    da= da<10? "0"+da : da;
+    document.getElementById("da").innerHTML=da;
+    m= m<10? "0"+m : m;//for time
+    document.getElementById("mi").innerHTML=m;
+    if(h>=12){
+        if(h==12){
+            document.getElementById("ap").innerHTML="PM"
+        }
+        else{
+            h=h-12;
+            document.getElementById("ap").innerHTML="PM";
+        }
+        if(h<10){
+            document.getElementById("ho").innerHTML= "0" +h;
+        }
+        else{
+            document.getElementById("ho").innerHTML=h;
+        }
+    }
+    else{
+        document.getElementById("ho").innerHTML=h;
+        document.getElementById("ap").innerHTML="AM";
+    }
+
+}
+
