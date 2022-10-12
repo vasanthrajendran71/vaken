@@ -62,11 +62,14 @@
 .label{
     margin-right:10px;
 }
-#female, #male,{
+#female{
     margin-left:26px;
 }
+#male{
+    margin-left:36px;
+}
 #custom{
-    margin-left:10px;
+    margin-left:22px;
 }
 #para1{
     font-size: 11px;
@@ -115,6 +118,6 @@
     margin-bottom:0;
 }
 #contain{
-    background-color:lightgrey;
-    padding-bottom:100px;
-   }
+    padding-bottom: 100px;
+    background-color: lightgrey;
+}
