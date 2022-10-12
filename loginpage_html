@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wikipedia Viewer</title>
+    <link href="style.css" rel="styleSheet">
+</head>
+<body>
+    <div>
+        <div>
+            <div id="image">
+                <img id="facebook" src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png" alt="facebook-logo" width="100px" height="100px">
+            </div>
+            <div id="container1">
+                <div id="container2">
+                    <div id="header">
+                        <div id="one">Create a new account</div>
+                        <div id="two">It's quick and easy.</div>
+                    </div>
+                    <div id="outerbody">
+                    <div id="body1">
+                        <div id="name1">
+                            <div class="first"><input type="text" id="firstname" placeholder="First name"></div>
+                            <div class="first"><input type="text" id="firstname" placeholder="Surname"></div>
+                        </div>
+                        <div>
+                            <input type="text" id="mobile" placeholder="Mobile number or email address">
+                        </div>
+                        <div>
+                            <input type="text" id="newpass" placeholder="New password">
+                        </div>
+                        <div>
+                            <div>Date of birth</div>
+                            <span id="datecontainer">
+                                <span><input type="text" id="date" placeholder="date"></span>
+                                <span><input type="text" id="date" placeholder="month"></span>
+                                <span><input type="text" id="date" placeholder="year"></span>
+                            </span>
+                        </div>
+                        <div>
+                            <div>Gender</div>
+                            <div id="gender">
+                            <span id="g" for="female">
+                                <label for="female" class="label">female</label>
+                                <input type="radio" id="female" name="s" value="1">
+                            </span>
+                            <span id="g" for="male" >
+                                <label for="male" class="label">male</label>
+                                <input type="radio" id="male" name="s" value="2">
+                            </span>
+                            <span id="g" for="custom">
+                                <label for="custom" class="label">custom</label>
+                                <input type="radio" id="custom" name="s" value="3">
+                            </span>
+                            </div>
+                        </div>
+                        <div id="para1">
+                            <p>People who use our service may have uploaded your contact information to Facebook.
+                                <a href="https://8081-afabfcfbfbedadaffabfdcaacbcaddbadc.examlyiopb.examly.io/" >Learn more</a>.
+                            </p>
+                        </div>
+                        <div id="para1">
+                            <p>
+                                By clicking sign up, you agree to our 
+                                <a href="" >Terms</a>
+                                ,
+                                <a href="">Privacy Policy</a>
+                                 and 
+                                <a href="">Cookies Policy</a>
+                                . You may receive SMS notification from us and can opt out at any time.
+                            </p>
+                        </div>
+                        <div id="submit1">
+                            <button type="submit" id="submit">Sign Up</button>
+                        </div>
+                        <div id="question">
+                            <a href="" >Already have an account?</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
