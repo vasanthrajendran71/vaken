@@ -13,7 +13,7 @@
     position:relative;
     width:420px;
     margin:0 auto 40px auto;
-    /* background-color: aqua; */
+    background-color: white;
     box-shadow: 5px 10px 18px #888888;
 }
 #container2{
@@ -114,3 +114,7 @@
     line-height:24px;
     margin-bottom:0;
 }
+#contain{
+    background-color:lightgrey;
+    padding-bottom:100px;
+   }
