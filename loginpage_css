@@ -1,0 +1,116 @@
+#name1{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+#body1{
+    display:flex;
+    flex-direction: column;
+    margin-top:20px;
+}
+#container1{
+    position:relative;
+    width:420px;
+    margin:0 auto 40px auto;
+    /* background-color: aqua; */
+    box-shadow: 5px 10px 18px #888888;
+}
+#container2{
+    position:relative;
+    width:400px;
+    /* background-color: antiquewhite;  */
+    left:10px;  
+    
+}
+#firstname{
+    width:170px;
+    height:20px;
+    padding:5px;
+}
+#mobile,#newpass{
+    width:380px;
+    height:20px;
+    padding:5px;
+    margin-bottom:10px;
+}
+#date{
+    width:100px;
+    height:20px;
+    padding:5px;
+}
+#datecontainer{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom:10px;
+}
+#g{
+    width:100px;
+    height:20px;
+    padding:5px;
+    border:0.5px solid black;
+    border-radius: 4px;
+    background-color: white;
+}
+#gender{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    margin-bottom: 10px;
+}
+.label{
+    margin-right:10px;
+}
+#female, #male,{
+    margin-left:26px;
+}
+#custom{
+    margin-left:10px;
+}
+#para1{
+    font-size: 11px;
+    font-family: arial;
+}
+#submit{
+    width:200px;
+    height:30px;
+    color:white;
+    background-color:greenyellow;
+    border:greenyellow;
+    border-radius:5px;
+}
+#submit1{
+    display:flex;
+    justify-content:center
+}
+#question{
+    text-align:center;
+    margin-top:10px;
+    margin-bottom:20px;
+}
+#image{
+    display:flex;
+    justify-content: center;
+}
+#header{
+    border-radius:8px 8px 0 0;
+    box-sizing:border-box;
+    padding:10px 16px;
+    position:relative;
+    z-index:1;
+    text-align:center;
+    border-bottom:1px solid grey;
+}
+#one{
+    font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+    margin-bottom:0;
+    font-size:25px;
+    line-height:32px;
+}
+#two{
+    font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+    font-size:15px;
+    line-height:24px;
+    margin-bottom:0;
+}
