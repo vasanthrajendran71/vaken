@@ -9,7 +9,7 @@
 </head>
 <body>
     <div>
-        <div>
+        <div id="contain">
             <div id="image">
                 <img id="facebook" src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png" alt="facebook-logo" width="100px" height="100px">
             </div>
@@ -58,25 +58,25 @@
                         </div>
                         <div id="para1">
                             <p>People who use our service may have uploaded your contact information to Facebook.
-                                <a href="https://8081-afabfcfbfbedadaffabfdcaacbcaddbadc.examlyiopb.examly.io/" >Learn more</a>.
+                                <a href="https://8081-afabfcfbfbedadaffabfdcaacbcaddbadc.examlyiopb.examly.io/" style="text-decoration:none;">Learn more</a>.
                             </p>
                         </div>
                         <div id="para1">
                             <p>
                                 By clicking sign up, you agree to our 
-                                <a href="" >Terms</a>
+                                <a href="" style="text-decoration:none;" >Terms</a>
                                 ,
-                                <a href="">Privacy Policy</a>
+                                <a href="" style="text-decoration:none;">Privacy Policy</a>
                                  and 
-                                <a href="">Cookies Policy</a>
+                                <a href="" style="text-decoration:none;">Cookies Policy</a>
                                 . You may receive SMS notification from us and can opt out at any time.
                             </p>
                         </div>
                         <div id="submit1">
                             <button type="submit" id="submit">Sign Up</button>
                         </div>
-                        <div id="question">
-                            <a href="" >Already have an account?</a>
+                        <div id="question" >
+                            <a href="" style="text-decoration:none;">Already have an account?</a>
                         </div>
                     </div>
                     </div>
