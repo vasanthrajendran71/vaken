@@ -11,7 +11,7 @@
     <div>
         <div id="contain">
             <div id="image">
-                <img id="facebook" src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png" alt="facebook-logo" width="100px" height="100px">
+                <img id="facebook" src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png" alt="facebook-logo" width="160px" height="100px">
             </div>
             <div id="container1">
                 <div id="container2">
@@ -19,10 +19,10 @@
                         <div id="one">Create a new account</div>
                         <div id="two">It's quick and easy.</div>
                     </div>
-                    <div id="outerbody">
+                    
                     <div id="body1">
                         <div id="name1">
-                            <div class="first"><input type="text" id="firstname" placeholder="First name"></div>
+                            <div class="first"><input type="text" id="firstname" placeholder="First name" name="firstname" required></div>
                             <div class="first"><input type="text" id="firstname" placeholder="Surname"></div>
                         </div>
                         <div>
@@ -34,14 +34,51 @@
                         <div>
                             <div>Date of birth</div>
                             <span id="datecontainer">
-                                <span><input type="text" id="date" placeholder="date"></span>
-                                <span><input type="text" id="date" placeholder="month"></span>
-                                <span><input type="text" id="date" placeholder="year"></span>
+                                <span>
+                                    <select id="day" >
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+
+                                    </select> </span>
+                                <span>
+                                    <select id="day">
+                                        <option value="january">january</option>
+                                        <option value="february">february</option>
+                                        <option value="march">march</option>
+                                        <option value="april">april</option>
+                                        <option value="may">may</option>
+                                    </select>
+                                </span>
+                                <span>
+                                    <select id="day">
+                                        <option value="2000">2000</option>
+                                        <option value="2001">2001</option>
+                                        <option value="2002">2002</option>
+                                        <option value="2003">2003</option>
+                                        <option value="2004">2004</option>
+                                        <option value="2005">2005</option>
+                                        <option value="2006">2006</option>
+                                        <option value="2007">2007</option>
+                                        <option value="2008">2008</option>
+                                        <option value="2009">2009</option>
+                                        <option value="2010">2010</option>
+                                    </select>
+                                </span>
                             </span>
                         </div>
                         <div>
                             <div>Gender</div>
-                            <div id="gender">
+                            <span id="gender">
                             <span id="g" for="female">
                                 <label for="female" class="label">female</label>
                                 <input type="radio" id="female" name="s" value="1">
@@ -54,7 +91,7 @@
                                 <label for="custom" class="label">custom</label>
                                 <input type="radio" id="custom" name="s" value="3">
                             </span>
-                            </div>
+                        </span>
                         </div>
                         <div id="para1">
                             <p>People who use our service may have uploaded your contact information to Facebook.
@@ -76,9 +113,8 @@
                             <button type="submit" id="submit">Sign Up</button>
                         </div>
                         <div id="question" >
-                            <a href="" style="text-decoration:none;">Already have an account?</a>
+                            <a href="" style="text-decoration:none; color:blue;">Already have an account?</a>
                         </div>
-                    </div>
                     </div>
                 </div>
             </div>
